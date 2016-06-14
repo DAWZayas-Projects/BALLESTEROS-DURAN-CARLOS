@@ -1,0 +1,114 @@
+body {
+	overflow: auto;
+}
+
+header {
+  height : 100px;
+  font-family: Arial;
+  text-indent: 25px;
+  font-size: 1.2em;
+}
+
+header:after {
+  clear: both;
+}
+
+#author {
+  position: relative;
+  bottom: 25px;
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+  float: left;
+}
+
+#div_left, #div_up, #div_right, #div_down {
+	float: left;
+	width: 200px;
+	height: 200px;
+  text-align: center;
+}
+
+#points, #score {
+	float: left;
+	width: 200px;
+	height: 200px;
+	text-align: right;
+	overflow: hidden;
+}
+
+#ranking, #playButton, #extra {
+	clear: both;
+  text-align: center;
+}
+
+.big {
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+.name {
+  float: left;
+  width: 49%;
+  text-align: right;
+}
+
+.record {
+  float: left;
+  width: 49%;
+  text-align: left;
+}
+
+.middle {
+  float: left;
+  width: 2%;
+  text-align: center;
+}
+
+#startClick {
+  padding: 10px;
+  margin: 10px;
+}
+
+.arrowImage {
+	width: 100px;
+	height: 100px;
+	animation-name: arrowAnimation;
+	animation-duration: 1s;
+	opacity: 0;
+}
+
+@keyframes arrowAnimation {
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  }
+
+  10% {
+    opacity: 0.5;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translate3d(0, 50, 0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  90% {
+    opacity: 0.5;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
