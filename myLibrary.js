@@ -2,7 +2,7 @@
 
 const divArray = ['div_left', 'div_up', 'div_down', 'div_right', 'points', 'score', 'extra'];
 
-const addArrowImageToDiv = imageName => document.getElementById('div_' + imageName).innerHTML = "<img class='arrowImage' src='../media/" + imageName + ".png' /><br/>";
+const addArrowImageToDiv = imageName => document.getElementById('div_' + imageName).innerHTML = "<img class='arrowImage' src='./media/" + imageName + ".png' /><br/>";
 
 const addItemToTopOfDiv = (item, divName) => {
   let div = document.getElementById(divName);
